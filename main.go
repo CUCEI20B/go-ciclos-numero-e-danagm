@@ -10,15 +10,13 @@ func main() {
 	for n <= lim {
 		var sum float64 = 1
 		var nf float64 = 1
-		for nf < n {
+		for nf <= n {
 			sum *= nf
 			nf++
 		}
-		if sum != 0 {
-			e += (1 / sum)
-		}
+		e += (1 / sum)
 		n++
 	}
 
-	fmt.Println(e - 1)
+	fmt.Println(e)
 }

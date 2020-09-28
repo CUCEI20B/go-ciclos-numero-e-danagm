@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var e uint64 = 0
-	var n uint64 = 0
-	var lim uint64
+	var e float32 = 0
+	var n float32 = 0
+	var lim float32
 	fmt.Scanln(&lim)
 	for n <= lim {
-		var sum uint64 = 1
-		var nf uint64 = 1
+		var sum float32 = 1
+		var nf float32 = 1
 		for nf < n {
 			sum *= nf
 			nf++
